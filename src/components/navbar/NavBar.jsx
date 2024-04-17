@@ -3,7 +3,7 @@ import {NavLink,Link }from "react-router-dom";
 import { useState } from "react";
 
 const NavBar = () => {
-  const [show,setShow] =useState(false);
+  const [show,setShow] = useState(false);
   const user = localStorage.getItem("user");
   const toggleMenu = () =>{
     setShow(!show);
@@ -15,8 +15,7 @@ const NavBar = () => {
     <nav className="navWrapper">
       <div>
         <Link to="/">
-          <i>{"<Jin> "}</i>
-          <span>Recipe</span>
+          <span>Jin Recipe-Selector</span>
         </Link>
       </div>
 
