@@ -1,0 +1,64 @@
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add some more horizontal padding */
+    border-bottom: 2px solid #FFF8DC; /* A softer white color for the border */
+    background-color: #A52A2A; /* Adjust to the exact brown shade if needed */
+}
+
+.navWrapper * {
+    color: antiquewhite;
+    text-decoration: none; /* Removes underline from links */
+}
+
+.linkWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    background-color: #A52A2A; /* Match the brown color of the navWrapper */
+}
+
+.active {
+    background-color: antiquewhite; /* A lighter brown for active state */
+    color: brown;
+    font-weight: bold;
+    padding: 5px 10px; /* Added padding for a more button-like appearance */
+    border-radius: 4px; /* Optional: Adds rounded corners */
+}
+
+.burgerMenu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: antiquewhite; /* Ensure icon is visible */
+}
+
+@media screen and (max-width: 768px) {
+    .linkWrapper {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(165, 42, 42, 0.9); /* Slightly transparent brown */
+    }
+    .linkWrapper.show {
+        display: flex;
+    }
+    .linkWrapper a {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #FFF8DC; /* Border color to match navWrapper */
+        color: antiquewhite; /* Text color for consistency */
+        background-color: transparent; /* Remove any non-transparent background */
+    }
+    .linkWrapper a.active{
+        background-color: black; /* A different color for the active link */
+        color: #FFF8DC;
+    }
+    .burgerMenu {
+        display: block;
+    }
+}

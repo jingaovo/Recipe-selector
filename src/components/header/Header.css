@@ -1,0 +1,44 @@
+.headerWrapper{
+    margin-top: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: brown;
+}
+
+.searchWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.searchWrapper input{
+    padding: 5px;
+}
+
+.searchWrapper button{
+    padding: 5px;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.searchWrapper button:hover{
+    background-color: white;
+    color: brown;
+    font-weight: bold;
+}
+
+.searchWrapper select{
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: brown;
+    font-weight: bold;
+}

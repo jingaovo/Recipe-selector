@@ -1,0 +1,41 @@
+.cardWrapper{
+    border: 2px solid brown;
+    width: 200px;
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(231, 219, 211);
+    color: brown
+}
+
+.cardWrapper img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardWrapper button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: brown;
+    color: antiquewhite;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cardWrapper button:hover{
+    background-color: antiquewhite;
+    color: brown;
+    font-weight: bold;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}

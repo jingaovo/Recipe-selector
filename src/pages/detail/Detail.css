@@ -1,0 +1,94 @@
+.detailWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    margin: auto; 
+}
+
+.imgWrapper {
+    display: flex;
+    align-items: center; 
+    gap: 16px; 
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.imgWrapper h1 {
+    background-color: #A52A2A; 
+    color: #FFF;
+    padding: 8px 16px; 
+    border-radius: 8px;
+    margin-bottom: 16px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); 
+}
+
+.imgWrapper img {
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.bottomWrapper {
+    border-top: 2px solid burlywood; 
+    padding-top: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; 
+    gap: 32px;
+    margin-top: 20px; 
+}
+
+.nutWrapper {
+    background-color: #f8f8f8; 
+    padding: 16px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    min-width: 200px; 
+}
+
+/* Styles for ingredient list container */
+.ingWrapper {
+    background-color: #f8f8f8; /* Same as nutrient info for consistency */
+    padding: 16px; /* Same padding for consistency */
+    border-radius: 8px; /* Same rounded corners for consistency */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Same shadow */
+    min-width: 200px; /* Minimum width */
+}
+
+/* Image in the meal section */
+.mealImg img {
+    width: 100%; /* Responsive width */
+    /* Max width to maintain image quality */
+    height: auto; /* Keep aspect ratio intact */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Headings within the nutrient and ingredient sections */
+.nutWrapper h4, .ingWrapper h4 {
+    margin-bottom: 8px; /* Space below headings */
+    color: #A52A2A; /* Darker color for contrast */
+}
+
+/* Paragraphs in the nutrient section for better readability */
+.nutWrapper p, .ingWrapper p {
+    line-height: 1.5; /* Spacing between lines */
+    margin-bottom: 4px; /* Spacing between paragraphs */
+}
+
+/* Buttons for further interaction */
+button {
+    background-color: #A52A2A; /* Brown theme color */
+    color: white;
+    border: none; /* No border for a modern look */
+    padding: 8px 16px; /* Padding for clickability */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Consistent shadow */
+    transition: background-color 0.3s; /* Transition for a subtle hover effect */
+}
+
+button:hover {
+    background-color: #8B4513; /* Darker shade on hover for interaction feedback */
+}
