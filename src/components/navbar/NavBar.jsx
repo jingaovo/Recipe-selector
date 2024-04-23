@@ -2,15 +2,15 @@ import "./NavBar.css"
 import {NavLink,Link }from "react-router-dom";
 import { useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({user, onLogout}) => {
   const [show,setShow] = useState(false);
-  const user = localStorage.getItem("user");
+  //const user = localStorage.getItem("user");
   const toggleMenu = () =>{
     setShow(!show);
   }
-  const setUser=()=>{
-    localStorage.removeItem("user");
-  }
+  // const setUser=()=>{
+  //   localStorage.removeItem("user");
+  // }
   return (
     <nav className="navWrapper">
       <div>
@@ -22,7 +22,7 @@ const NavBar = () => {
       <div className={show ? 'linkWrapper show' : 'linkWrapper'}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="about">About</NavLink>
-        <NavLink onClick={()=>setUser()} to="login">
+        <NavLink onClick={user ? onLogout : undefined} to={"/login"}>
           {user ? "Logout" : "Login"}
         </NavLink>
       </div>
@@ -33,3 +33,4 @@ const NavBar = () => {
 }
 
 export default NavBar
+

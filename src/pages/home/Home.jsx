@@ -27,10 +27,6 @@ const Home = () => {
       console.log(error);
     }
   }
-  //console.log(recipes);
-  // useEffect(() => {
-  //   getData();
-  // }, [])
   
   return (
     <div>

@@ -11,8 +11,10 @@
 }
 
 .loginWord{
+    margin: 20px;
     background-color: brown;
-    color: antiquewhite;
+    padding: 10px;
+    color: white;
 }
 
 .formWrapper{
@@ -45,9 +47,13 @@
     padding: 5px;
     border-radius: 10px;
     width: 5rem;
-    background-color: greenyellow;
+    background-color: white;
+    color:brown;
     cursor: pointer;
+    font-weight: bold;
 }
 .formWrapper form button:hover{
-    background-color: green;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
 }

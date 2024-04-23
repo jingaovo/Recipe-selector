@@ -19,7 +19,9 @@
 }
 
 .linkWrapper a:hover{
-    background-color: grey;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px; 
     color: antiquewhite;
     font-weight: bold;
 }
@@ -28,7 +30,7 @@
     background-color: antiquewhite; 
     color: brown;
     font-weight: bold;
-    padding: 5px 10px; /* Added padding for a more button-like appearance */
+    padding: 5px 10px; 
     border-radius: 5px; 
 }
 

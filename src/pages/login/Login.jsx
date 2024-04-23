@@ -2,7 +2,7 @@ import "./Login.css"
 import {useNavigate} from "react-router-dom"
 import { useState } from "react";
 
-const Login = () => {
+const Login = ({onLogIn}) => {
   const navigate = useNavigate();
   const [user,setUser] = useState("");
   const [email,setEmail] = useState("");
@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit=(e)=>{
     e.preventDefault();
     navigate(-1);
-    localStorage.setItem("user", JSON.stringify(user));
+    onLogIn(user);
     setUser("");
     setEmail("");
   };
