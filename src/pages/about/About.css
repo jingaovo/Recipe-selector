@@ -1,3 +1,45 @@
 .about{
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh
+}
+
+.aboutWrapper {
+    margin: 20px;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.aboutWrapper h2 {
+    color: #A52A2A;
+    margin-bottom: 16px;
+}
+
+.aboutWrapper p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.aboutWrapper ol {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.aboutWrapper li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.aboutWrapper li b{
+    color: #A52A2A;
 }

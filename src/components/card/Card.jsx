@@ -5,16 +5,17 @@ import {useNavigate} from "react-router-dom"
 
 const Card = ({recipes}) => {
   const navigate = useNavigate();
-  console.log(recipes);
+  //console.log(recipes);
   return (
     <div className="card">
       {recipes.map(({recipe},index)=>{
-        const {label,image} = recipe;
+        const {label,image} = recipe; //destructure
         return (
           <div className="cardWrapper" key={index}>
             <h2>{label}</h2>
             <img src={image ? image : image1} alt="food" />
-            <button onClick={()=>navigate("detail", {state: recipe, replace:false})}>More Details</button>
+            <button onClick={() => navigate("detail", { state: recipe, replace: false })}>More Details</button>
+            {/* push a new entry on the history stack using replace:Flase */}
           </div>
         )
       })}

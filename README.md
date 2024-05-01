@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Recipe Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Recipe Explorer is a web application built using React, designed to help users easily discover and explore recipes for different meal types. Leveraging the Edamam Recipe Search API, this app provides a user-friendly interface to search for recipes based on ingredients, meal type, and other criteria.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search Functionality**: Users can search for recipes based on specific ingredients or dish names.
+- **Meal Type Filtering**: Filter recipes by meal type such as Breakfast, Lunch, Dinner, Snack, or Tea Time.
+- **Detailed Recipe Views**: View detailed information about recipes including ingredients, nutritional facts, and cooking instructions.
+- **User Authentication**: Features a login system for users to access more detailed recipe information.
+I will add more personal features for future implementation(eg: save recipe)
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- React Router for navigation
+- Axios for API requests(Edamam Recipe Search API)
+- CSS for styling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Before you begin, ensure you have the following software installed on your computer:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **npm**: A package manager for JavaScript, included with Node.js.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Follow these steps to get your development environment running:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   Clone the Recipe Explorer repository using `git clone`
+2. **Install dependencies**:
+    Navigate to the project directory and install its dependencies. You can use `npm install`
+3. **Start development server**:
+Run `npm start` to start the local development server. This will compile the React application and serve it on http://localhost:3000/.

@@ -4,13 +4,11 @@ import { useState } from "react";
 
 const NavBar = ({user, onLogout}) => {
   const [show,setShow] = useState(false);
-  //const user = localStorage.getItem("user");
+
   const toggleMenu = () =>{
     setShow(!show);
   }
-  // const setUser=()=>{
-  //   localStorage.removeItem("user");
-  // }
+  
   return (
     <nav className="navWrapper">
       <div>
