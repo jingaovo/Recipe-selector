@@ -1,6 +1,7 @@
 # Recipe Explorer
 
 Recipe Explorer is a web application built using React, designed to help users easily discover and explore recipes for different meal types. Leveraging the Edamam Recipe Search API, this app provides a user-friendly interface to search for recipes based on ingredients, meal type, and other criteria.
+![Overview](src/assets/Recipe.gif)
 
 ## Features
 
